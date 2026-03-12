@@ -3,43 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sustainable Living for a Better Tomorrow">
     <title>EcoLife Hub</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #1a1a2e, #16213e); min-height: 100vh; color: #fff; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            background: linear-gradient(135deg, #2ecc71, #16a085); 
+            min-height: 100vh; 
+            color: #fff; 
+        }
         .hero { text-align: center; padding: 80px 20px; }
-        .hero h1 { font-size: 3em; margin-bottom: 20px; background: linear-gradient(90deg, #00d4ff, #7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero p { font-size: 1.2em; color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 40px; }
-        .btn { display: inline-block; padding: 15px 40px; background: linear-gradient(90deg, #7b2ff7, #00d4ff); color: white; text-decoration: none; border-radius: 30px; font-weight: bold; transition: transform 0.2s; }
-        .btn:hover { transform: scale(1.05); }
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
-        .feature { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 16px; text-align: center; }
-        .feature h3 { color: #00d4ff; margin-bottom: 15px; }
-        .footer { text-align: center; padding: 40px; color: rgba(255,255,255,0.5); }
+        .hero h1 { font-size: 3em; margin-bottom: 20px; }
+        .hero p { font-size: 1.3em; color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto 40px; line-height: 1.6; }
+        .tagline { 
+            font-size: 1.1em; 
+            color: rgba(255,255,255,0.8); 
+            margin-bottom: 30px; 
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .btn { 
+            display: inline-block; 
+            padding: 15px 40px; 
+            background: #2ecc71; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 30px; 
+            font-weight: bold; 
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 1.1em;
+        }
+        .btn:hover { 
+            transform: scale(1.05); 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .features { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 30px; 
+            padding: 60px 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+        .feature { 
+            background: rgba(255,255,255,0.15); 
+            backdrop-filter: blur(10px);
+            padding: 35px; 
+            border-radius: 20px; 
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .feature:hover { transform: translateY(-5px); }
+        .feature h3 { 
+            color: #2ecc71; 
+            margin-bottom: 15px; 
+            font-size: 1.3em;
+        }
+        .feature p { 
+            color: rgba(255,255,255,0.9); 
+            line-height: 1.6;
+        }
+        .about { 
+            background: rgba(0,0,0,0.2); 
+            padding: 60px 20px; 
+            text-align: center;
+        }
+        .about-content { 
+            max-width: 800px; 
+            margin: 0 auto; 
+        }
+        .about h2 { 
+            font-size: 2em; 
+            margin-bottom: 20px; 
+        }
+        .about p { 
+            font-size: 1.1em; 
+            line-height: 1.8; 
+            color: rgba(255,255,255,0.85); 
+        }
+        .footer { 
+            text-align: center; 
+            padding: 40px; 
+            color: rgba(255,255,255,0.6);
+            background: rgba(0,0,0,0.2);
+        }
+        .footer a { color: #2ecc71; text-decoration: none; }
     </style>
 </head>
 <body>
     <div class="hero">
         <h1>EcoLife Hub</h1>
-        <p>Welcome to EcoLife Hub - Your solution for productivity and growth</p>
-        <a href="#features" class="btn">Learn More</a>
+        <p class="tagline">Sustainable Living for a Better Tomorrow</p>
+        <p>Discover eco-friendly products, sustainable living tips, and green alternatives for everyday life.</p>
+        <a href="#features" class="btn">Explore Now</a>
     </div>
+    
+    <div class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Discover eco-friendly products, sustainable living tips, and green alternatives for everyday life. We curate the best resources, tools, and guides to help you succeed in this space. Our mission is to provide actionable insights and trustworthy recommendations.</p>
+        </div>
+    </div>
+    
     <div class="features" id="features">
+        
         <div class="feature">
-            <h3>🚀 Fast & Efficient</h3>
-            <p>Streamlined solutions that save you time and effort</p>
+            <h3>🌱 Eco Products</h3>
+            <p>Reviews of sustainable products that help reduce your environmental footprint</p>
         </div>
         <div class="feature">
-            <h3>💡 Innovative</h3>
-            <p>Cutting-edge approaches to solve your challenges</p>
+            <h3>♻️ Zero Waste</h3>
+            <p>Practical guides to reducing waste and living a zero-waste lifestyle</p>
         </div>
         <div class="feature">
-            <h3>🎯 Results-Driven</h3>
-            <p>Focused on delivering real results for your business</p>
+            <h3>🌿 Green Living</h3>
+            <p>Tips for making your home and lifestyle more environmentally friendly</p>
         </div>
     </div>
+    
     <div class="footer">
         <p>&copy; 2026 EcoLife Hub. All rights reserved.</p>
+        <p style="margin-top: 10px; font-size: 0.9em;">Generated by Project Argo - Autonomous AI Business System</p>
     </div>
 </body>
 </html>
